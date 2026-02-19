@@ -39,11 +39,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // 🔥 Most correct mapping for typical Pano2VR export
             cubeMap: [
-                  "/assets/b.jpg"    // BACK
-                "/assets/l.jpg",   // LEFT
+                  "/assets/b.jpg",    // BACK
+                "/assets/u.jpg",   // UP (ceiling)
                 "/assets/f.jpg",   // FRONT
                 "/assets/r.jpg",   // RIGHT
-                "/assets/u.jpg",   // UP (ceiling)
+                "/assets/l.jpg",   // LEFT
                "/assets/d.jpg",   // DOWN (floor)
             ],
 
@@ -60,11 +60,11 @@ document.addEventListener('DOMContentLoaded', function () {
             yaw: 0,
             type: "cubemap",
             cubeMap: [
-               "/assets/b.jpg"
-                "/assets/l.jpg",
+               "/assets/b.jpg",
+               "/assets/u.jpg", 
                 "/assets/f.jpg", 
                 "/assets/r.jpg",
-               "/assets/u.jpg",
+               "/assets/l.jpg",
                 "/assets/d.jpg",
             ],
             autoLoad: true,
@@ -187,6 +187,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+
 
 
 
