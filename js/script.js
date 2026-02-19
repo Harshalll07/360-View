@@ -39,45 +39,46 @@ document.addEventListener('DOMContentLoaded', function () {
      */
     const scenes = {
         node2: {
-            title: "Scene 2",
-            hfov: 110,
-            pitch: 0,
-            yaw: 0,
-            type: "cubemap",
-            cubeMap: [
-                "output/tiles/node2/cf_0/l_0/c_0/tile_0.jpg",
-                "output/tiles/node2/cf_1/l_0/c_0/tile_0.jpg",
-                "output/tiles/node2/cf_2/l_0/c_0/tile_0.jpg",
-                "output/tiles/node2/cf_3/l_0/c_0/tile_0.jpg",
-                "output/tiles/node2/cf_4/l_0/c_0/tile_0.jpg",
-                "output/tiles/node2/cf_5/l_0/c_0/tile_0.jpg"
-            ],
-            autoLoad: true,
-            hotSpots: [
-                createChevron(0, "node3")    // Forward to Node 3
-            ]
-        },
+    title: "Scene 2",
+    hfov: 110,
+    pitch: 0,
+    yaw: 0,
+    type: "cubemap",
+    cubeMap: [
+        "/assets/r.jpg",   // right
+        "/assets/l.jpg",   // left
+        "/assets/u.jpg",   // up
+        "/assets/d.jpg",   // down
+        "/assets/f.jpg",   // front
+        "/assets/b.jpg"    // back
+    ],
+    autoLoad: true,
+    hotSpots: [
+        createChevron(0, "node3")
+    ]
+}
 
-        node3: {
-            title: "Scene 3",
-            hfov: 110,
-            pitch: 0,
-            yaw: 0,
-            type: "cubemap",
-            cubeMap: [
-                "output/tiles/node3/cf_0/l_0/c_0/tile_0.jpg",
-                "output/tiles/node3/cf_1/l_0/c_0/tile_0.jpg",
-                "output/tiles/node3/cf_2/l_0/c_0/tile_0.jpg",
-                "output/tiles/node3/cf_3/l_0/c_0/tile_0.jpg",
-                "output/tiles/node3/cf_4/l_0/c_0/tile_0.jpg",
-                "output/tiles/node3/cf_5/l_0/c_0/tile_0.jpg"
-            ],
-            autoLoad: true,
-            hotSpots: [
-                createChevron(180, "node2"), // Back to Node 2
-            ]
-        }
-    };
+
+       node3: {
+    title: "Scene 3",
+    hfov: 110,
+    pitch: 0,
+    yaw: 0,
+    type: "cubemap",
+    cubeMap: [
+        "/assets/r.jpg",
+        "/assets/l.jpg",
+        "/assets/u.jpg",
+        "/assets/d.jpg",
+        "/assets/f.jpg",
+        "/assets/b.jpg"
+    ],
+    autoLoad: true,
+    hotSpots: [
+        createChevron(180, "node2")
+    ]
+}
+
 
     // ===============================================
     // Initialization
@@ -231,3 +232,4 @@ document.addEventListener('DOMContentLoaded', function () {
         window.performStreetViewMove(nextScene);
     });
 });
+
