@@ -62,9 +62,9 @@ document.addEventListener('DOMContentLoaded', function () {
             cubeMap: [
                 "/assets/r.jpg",
                 "/assets/l.jpg",
-                "/assets/u.jpg",
+                "/assets/f.jpg", 
                 "/assets/d.jpg",
-                "/assets/f.jpg",
+               "/assets/u.jpg",
                 "/assets/b.jpg"
             ],
             autoLoad: true,
@@ -187,4 +187,5 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+
 
