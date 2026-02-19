@@ -37,48 +37,47 @@ document.addEventListener('DOMContentLoaded', function () {
      * Mapping physical space.
      * Use placeholders until real assets defined.
      */
-    const scenes = {
-        node2: {
-    title: "Scene 2",
-    hfov: 110,
-    pitch: 0,
-    yaw: 0,
-    type: "cubemap",
-    cubeMap: [
-        "/assets/r.jpg",   // right
-        "/assets/l.jpg",   // left
-        "/assets/u.jpg",   // up
-        "/assets/d.jpg",   // down
-        "/assets/f.jpg",   // front
-        "/assets/b.jpg"    // back
-    ],
-    autoLoad: true,
-    hotSpots: [
-        createChevron(0, "node3")
-    ]
-}
+   const scenes = {
+    node2: {
+        title: "Scene 2",
+        hfov: 110,
+        pitch: 0,
+        yaw: 0,
+        type: "cubemap",
+        cubeMap: [
+            "/assets/r.jpg",
+            "/assets/l.jpg",
+            "/assets/u.jpg",
+            "/assets/d.jpg",
+            "/assets/f.jpg",
+            "/assets/b.jpg"
+        ],
+        autoLoad: true,
+        hotSpots: [
+            createChevron(0, "node3")
+        ]
+    },  // ✅ comma REQUIRED
 
-
-       node3: {
-    title: "Scene 3",
-    hfov: 110,
-    pitch: 0,
-    yaw: 0,
-    type: "cubemap",
-    cubeMap: [
-        "/assets/r.jpg",
-        "/assets/l.jpg",
-        "/assets/u.jpg",
-        "/assets/d.jpg",
-        "/assets/f.jpg",
-        "/assets/b.jpg"
-    ],
-    autoLoad: true,
-    hotSpots: [
-        createChevron(180, "node2")
-    ]
-}
-
+    node3: {
+        title: "Scene 3",
+        hfov: 110,
+        pitch: 0,
+        yaw: 0,
+        type: "cubemap",
+        cubeMap: [
+            "/assets/r.jpg",
+            "/assets/l.jpg",
+            "/assets/u.jpg",
+            "/assets/d.jpg",
+            "/assets/f.jpg",
+            "/assets/b.jpg"
+        ],
+        autoLoad: true,
+        hotSpots: [
+            createChevron(180, "node2")
+        ]
+    }
+};  // ✅ close object properly
 
     // ===============================================
     // Initialization
@@ -232,4 +231,5 @@ document.addEventListener('DOMContentLoaded', function () {
         window.performStreetViewMove(nextScene);
     });
 });
+
 
