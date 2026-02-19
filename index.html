@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Virtual Tour | Digital Living</title>
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Pannellum CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Virtual Tour Container -->
+    <div id="panorama"></div>
+
+    <!-- Transition Overlay -->
+    <div id="transition-overlay"></div>
+
+    <!-- UI Overlay -->
+    <div class="ui-overlay">
+        <header class="tour-header">
+            <h1>Digital Living</h1>
+            <p>Luxury Virtual Experience</p>
+        </header>
+
+        <nav class="tour-controls">
+            <button id="home-btn" class="control-btn" title="Home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+            </button>
+            <button id="autorotate-btn" class="control-btn" title="Toggle Auto-Rotate">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38" />
+                </svg>
+            </button>
+            <button id="fullscreen-btn" class="control-btn" title="Fullscreen">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+
+        <!-- New Navigation Bar -->
+        <div class="nav-bar">
+            <button id="prev-btn" class="nav-btn">
+                <span>&larr;</span> Prev Spot
+            </button>
+            <span class="nav-divider"></span>
+            <button id="next-btn" class="nav-btn">
+                Next Spot <span>&rarr;</span>
+            </button>
+        </div>
+
+        <div class="scene-title" id="scene-title">Main Hall</div>
+    </div>
+
+    <!-- Pannellum JS -->
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
