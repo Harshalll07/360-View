@@ -41,9 +41,9 @@ document.addEventListener('DOMContentLoaded', function () {
             cubeMap: [
                 "/assets/r.jpg",   // RIGHT
                 "/assets/l.jpg",   // LEFT
-                "/assets/u.jpg",   // UP (ceiling)
-                "/assets/d.jpg",   // DOWN (floor)
                 "/assets/f.jpg",   // FRONT
+                "/assets/d.jpg",   // DOWN (floor)
+                 "/assets/u.jpg",   // UP (ceiling)
                 "/assets/b.jpg"    // BACK
             ],
 
@@ -187,3 +187,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+
