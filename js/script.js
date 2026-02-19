@@ -44,14 +44,15 @@ document.addEventListener('DOMContentLoaded', function () {
         pitch: 0,
         yaw: 0,
         type: "cubemap",
-        cubeMap: [
-            "/assets/r.jpg",
-            "/assets/l.jpg",
-            "/assets/u.jpg",
-            "/assets/d.jpg",
-            "/assets/f.jpg",
-            "/assets/b.jpg"
-        ],
+     cubeMap: [
+    "/assets/l.jpg",   // right
+    "/assets/r.jpg",   // left
+    "/assets/u.jpg",
+    "/assets/d.jpg",
+    "/assets/f.jpg",
+    "/assets/b.jpg"
+]
+
         autoLoad: true,
         hotSpots: [
             createChevron(0, "node3")
@@ -64,14 +65,15 @@ document.addEventListener('DOMContentLoaded', function () {
         pitch: 0,
         yaw: 0,
         type: "cubemap",
-        cubeMap: [
-            "/assets/r.jpg",
-            "/assets/l.jpg",
-            "/assets/u.jpg",
-            "/assets/d.jpg",
-            "/assets/f.jpg",
-            "/assets/b.jpg"
-        ],
+       cubeMap: [
+    "/assets/l.jpg",   // right
+    "/assets/r.jpg",   // left
+    "/assets/u.jpg",
+    "/assets/d.jpg",
+    "/assets/f.jpg",
+    "/assets/b.jpg"
+]
+
         autoLoad: true,
         hotSpots: [
             createChevron(180, "node2")
@@ -231,5 +233,6 @@ document.addEventListener('DOMContentLoaded', function () {
         window.performStreetViewMove(nextScene);
     });
 });
+
 
 
